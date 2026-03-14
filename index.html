@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Analysis</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #btn:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ msg }}</h1>
+    <div class="container">
+        <form action="{{ url_for('predict') }}" method="post">
+            <h1>Twitter Sentiment Intelligence System</h1>
+            <label for="tweet">Enter or paste the Tweet below</label><br><br>
+            <input type="text" name="tweet" id="tweet" placeholder="Enter the tweet here..">
+            <br><br><br><br>
+            <input type="submit" id="btn" name="submit">
+            <input type="reset" id="btn" name="reset">
+        </form>
+    </div>
+</body>
+</html>
