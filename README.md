@@ -17,7 +17,7 @@
 - Matplotlib / Seaborn
 **Results:-** The model successfully classified tweets into sentiment categories and helped identify public opinion trends using visual insights.
 
-  **Future Improvements:-**
+**Future Improvements:-**
 - Improve model accuracy using deep learning models
 - Real-time Twitter data integration
 - Deployment as a web application
